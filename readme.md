@@ -3,7 +3,8 @@
 ## Lancer Oracle Database 21c Express avec Docker
 ```sh
 # Lancer Oracle Database 21c Express avec Docker
-docker container create -it --name oracle-test -p 1521:1521 -e ORACLE_PWD=welcome123 container-registry.oracle.com/database/express:latest
+docker container create -it --name oracledb -p 1521:1521 -e ORACLE_PWD=welcome123 container-registry.oracle.com/database/express:latest
+docker start oracledb
 ```
 
 ## Résumé des API
